@@ -39,7 +39,7 @@ function renderNavbar() {
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div class="container">
         <a class="navbar-brand fw-bold" href="index.html">
-          <i class="bi bi-cpu"></i> ${t(DATA.inicio.hero.title)}
+          <i class="bi bi-cpu"></i> ${t(DATA[lang].inicio.hero.title)}
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
           <span class="navbar-toggler-icon"></span>
@@ -73,8 +73,8 @@ function renderFooter() {
       <div class="container">
         <div class="row g-4">
           <div class="col-md-4">
-            <h5><i class="bi bi-cpu"></i> ${t(DATA.inicio.hero.title)}</h5>
-            <p class="text-white-50 small">${t(DATA.inicio.hero.desc)}</p>
+            <h5><i class="bi bi-cpu"></i> ${t(DATA[lang].inicio.hero.title)}</h5>
+            <p class="text-white-50 small">${t(DATA[lang].inicio.hero.desc)}</p>
           </div>
           <div class="col-md-4">
             <h5>${t(DATA[lang].contacto.title)}</h5>
