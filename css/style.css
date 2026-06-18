@@ -1,0 +1,162 @@
+:root {
+  --verde-claro: #81C784;
+  --verde-oscuro: #388E3C;
+  --gris: #6c757d;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #212529;
+  background-color: #f8f9fa;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  min-height: 85vh;
+  position: relative;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(129,199,132,0.1)" d="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,208C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar {
+  backdrop-filter: blur(10px);
+  background-color: rgba(26, 26, 46, 0.95) !important;
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--verde-claro) !important;
+}
+
+.navbar-brand {
+  letter-spacing: -0.5px;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.btn-success {
+  background-color: var(--verde-claro);
+  border-color: var(--verde-claro);
+  color: #1a1a2e;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-success:hover {
+  background-color: var(--verde-oscuro);
+  border-color: var(--verde-oscuro);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.btn-outline-success {
+  border-color: var(--verde-claro);
+  color: var(--verde-claro);
+}
+
+.btn-outline-success:hover {
+  background-color: var(--verde-claro);
+  border-color: var(--verde-claro);
+  color: #1a1a2e;
+}
+
+.text-success {
+  color: var(--verde-claro) !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgba(129, 199, 132, 0.15);
+  color: var(--verde-oscuro);
+  font-weight: 600;
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(129, 199, 132, 0.25);
+}
+
+.docente-img {
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.testimonio-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid var(--verde-claro);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 40px;
+  height: 40px;
+  background-size: 60%;
+}
+
+.blockquote-footer {
+  margin-top: 0.5rem;
+}
+
+.lang-btn.active {
+  background-color: var(--verde-claro) !important;
+  border-color: var(--verde-claro) !important;
+  color: #1a1a2e !important;
+}
+
+.lang-btn:not(.active):hover {
+  background-color: rgba(129, 199, 132, 0.2);
+  border-color: var(--verde-claro);
+  color: var(--verde-claro);
+}
+
+footer a {
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+footer a:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 60vh;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .docente-img {
+    height: 200px;
+  }
+}
